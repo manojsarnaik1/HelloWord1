@@ -1,0 +1,269 @@
+git pull--> get project update  from git
+git clone <url> --> get project
+
+git add .  -->add all file in index
+git add <url-file> add perticular file in index
+
+git commit -m "your mesaage"  --> commit the file to remote repo
+git push --> push the file to remote  repo
+
+git checkout -b "your branch name" --> create branch name
+gi checkout "your branch name" --> move one branch to another
+git branch --> check branch list
+
+
+git push origin "your branch name" --> push your branch to remote repo
+
+====================================================================================
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Validation/SumCheckArray.class
+        src/Validation/SumCheckArray.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Validation/SumCheckArray.class
+        src/Validation/SumCheckArray.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Validation/SumCheckArray.class
+        src/Validation/SumCheckArray.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Validation/CheckProtected.class
+        bin/Validation/SumCheckArray.class
+        src/Validation/CheckProtected.java
+        src/Validation/SumCheckArray.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\projects\git_project\HelloWord1>git add src/Validation/CheckProtected.java
+
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/Validation/CheckProtected.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Validation/CheckProtected.class
+        bin/Validation/SumCheckArray.class
+        src/Validation/SumCheckArray.java
+
+
+D:\projects\git_project\HelloWord1>git commit -m "adding second file"
+[master 1838a4b] adding second file
+ 1 file changed, 25 insertions(+)
+ create mode 100644 src/Validation/CheckProtected.java
+
+D:\projects\git_project\HelloWord1>git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 646 bytes | 323.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/manojsarnaik1/HelloWord1.git
+   81f9ac7..1838a4b  master -> master
+
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Validation/CheckProtected.class
+        bin/Validation/SumCheckArray.class
+        src/Validation/SumCheckArray.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\projects\git_project\HelloWord1>git pull
+Already up to date.
+
+D:\projects\git_project\HelloWord1>git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/manojsarnaik1/HelloWord1
+   1838a4b..1a2c4a3  master     -> origin/master
+Updating 1838a4b..1a2c4a3
+Fast-forward
+ src/Validation/CheckProtected.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Validation/CheckProtected.class
+        bin/Validation/SumCheckArray.class
+        src/Validation/SumCheckArray.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\projects\git_project\HelloWord1>git add .
+
+D:\projects\git_project\HelloWord1>git commit -m "adding third commit  file"
+[master 204c5e9] adding third commit  file
+ 3 files changed, 53 insertions(+)
+ create mode 100644 bin/Validation/CheckProtected.class
+ create mode 100644 bin/Validation/SumCheckArray.class
+ create mode 100644 src/Validation/SumCheckArray.java
+
+D:\projects\git_project\HelloWord1>git push
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 2.73 KiB | 1.37 MiB/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/manojsarnaik1/HelloWord1.git
+   1a2c4a3..204c5e9  master -> master
+
+D:\projects\git_project\HelloWord1>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+D:\projects\git_project\HelloWord1>git branch
+* master
+
+D:\projects\git_project\HelloWord1>git checkout -b "Aarvi"
+Switched to a new branch 'Aarvi'
+
+D:\projects\git_project\HelloWord1>git branch
+* Aarvi
+  master
+
+D:\projects\git_project\HelloWord1>git status
+On branch Aarvi
+nothing to commit, working tree clean
+
+D:\projects\git_project\HelloWord1>git status
+On branch Aarvi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bin/Validation/DeepCopy.class
+        bin/Validation/Ex23.class
+        src/Validation/DeepCopy.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\projects\git_project\HelloWord1>git add .
+
+D:\projects\git_project\HelloWord1>git commit -m "check branch"
+[Aarvi 9a92eeb] check branch
+ 3 files changed, 50 insertions(+)
+ create mode 100644 bin/Validation/DeepCopy.class
+ create mode 100644 bin/Validation/Ex23.class
+ create mode 100644 src/Validation/DeepCopy.java
+
+D:\projects\git_project\HelloWord1>git push
+fatal: The current branch Aarvi has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Aarvi
+
+
+D:\projects\git_project\HelloWord1>git push origin Aarvi
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 2.24 KiB | 2.24 MiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'Aarvi' on GitHub by visiting:
+remote:      https://github.com/manojsarnaik1/HelloWord1/pull/new/Aarvi
+remote:
+To https://github.com/manojsarnaik1/HelloWord1.git
+ * [new branch]      Aarvi -> Aarvi
+
+D:\projects\git_project\HelloWord1>git status
+On branch Aarvi
+nothing to commit, working tree clean
+
+D:\projects\git_project\HelloWord1>git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/manojsarnaik1/HelloWord1
+   204c5e9..b4db1f2  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> Aarvi
+
+
+D:\projects\git_project\HelloWord1>git pull origin master
+From https://github.com/manojsarnaik1/HelloWord1
+ * branch            master     -> FETCH_HEAD
+Updating 9a92eeb..b4db1f2
+Fast-forward
+
+D:\projects\git_project\HelloWord1>git status
+On branch Aarvi
+nothing to commit, working tree clean
+
+D:\projects\git_project\HelloWord1>git branch
+* Aarvi
+  master
+
+D:\projects\git_project\HelloWord1>git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+D:\projects\git_project\HelloWord1>git branch
+  Aarvi
+* master
+
+D:\projects\git_project\HelloWord1>
