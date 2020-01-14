@@ -14,6 +14,21 @@ git branch --> check branch list
 
 git push origin "your branch name" --> push your branch to remote repo
 
+git push origin manojbranch2
+
+Do you want to merge a 'develop' branch into master?
+
+git checkout master
+git merge develop
+Or do you want to merge the changes from master into your development branch?
+
+git checkout develop
+git merge master
+
+
+git push
+
+
 ====================================================================================
 D:\projects\git_project\HelloWord1>git status
 On branch master

@@ -4,11 +4,11 @@ package Validation;
 //default member can't access outside the package
 //default-->private-->protected-->public
 public class CheckProtected {
-	protected int i = 1011,k=0;
+	protected int i = 1011,k=0 ,d=0;
 	
 	protected int j = 10;
 
-	int p = 1011;
+	int p = 1011,u=0;
 	protected int q = 10;
 	public int r = 1011;
 
