@@ -1,4 +1,5 @@
 git pull-----> get project update  from git
+
 git clone <url> --> get project
 
 git add .  -->add all file in index
